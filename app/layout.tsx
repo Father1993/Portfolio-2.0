@@ -3,16 +3,12 @@ import type { Metadata, Viewport } from 'next'
 import PagesLayout from '@/components/layouts/PageLayout'
 import './globalStyles/normalize.css'
 import './globalStyles/globals.css'
-import './globalStyles/header.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://spinej.ru'),
-  title:
-    'Spinej.ru | Сайт портфолио/резюме Спиней Андрей',
-  description:
-    'Сайт портфолио/резюме разработчика Спиней Андрея',
-  keywords:
-    'Спиней, spinej, spiney, spinei, Спиней Андрей',
+  title: 'Spinej.ru | Сайт портфолио/резюме Спиней Андрей',
+  description: 'Сайт портфолио/резюме разработчика Спиней Андрея',
+  keywords: 'Спиней, spinej, spiney, spinei, Спиней Андрей',
   authors: [{ name: 'Perevozka27' }],
   creator: 'Spinej.ru',
   publisher: 'Spinej.ru',
@@ -38,8 +34,7 @@ export const metadata: Metadata = {
     url: 'https://Spinej.ru',
     siteName: 'Spinej.ru',
     title: 'Spinej.ru - Сайт портфолио/резюме Спиней Андрей',
-    description:
-      'Сайт портфолио/резюме разработчика Спиней Андрея',
+    description: 'Сайт портфолио/резюме разработчика Спиней Андрея',
     images: [
       {
         url: '/img/android-chrome-512x512.png',
@@ -50,8 +45,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Spinej.ru - Спиней Андрей',
-    description:
-      'Сайт портфолио/резюме разработчика Спиней Андрея',
+    description: 'Сайт портфолио/резюме разработчика Спиней Андрея',
     images: ['/img/android-chrome-192x192.png'],
     creator: '@Spinej.ru',
   },

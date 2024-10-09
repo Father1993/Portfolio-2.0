@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 @import url('/fonts/stylesheet.css');
+@import url('./bootstrap.css');
 
 :root {
-  --background: #272727;
-  --foreground: #171717;
+  --background: rgb(39, 39, 39);
+  --foreground: rgb(39, 39, 39);
 }
 
 * {
