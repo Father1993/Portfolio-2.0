@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Andrej Spinej</title>
+        <link rel="icon" type="image/ico" href="./img/favicon/favicon.ico" />
+        <link rel="icon" type="image/png" href="./img/favicon/favicon.png" />
+        <link
+            rel="apple-touch-icon"
+            href="./img/favicon/apple-touch-favicon.png"
+        />
+        <link rel=”mask-icon” href=”./img/favicon/icon.svg”>
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./img/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./img/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./img/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./img/favicon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="./img/favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#00aba9" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta property="og:title" content="Andrej Spinej Website" />
+        <meta property="og:description" content="Portfolio" />
+        <meta property="og:image" content="./img/assets/logo-website.png" />
+        <meta property="og:url" content="https://spinej.ru" />
+        <meta name="description" content="Сайт портфолио" />
+        <meta
+            name="keywords"
+            content="портфолио, Хабаровск, frontend, программист, разработчик, full-stack, backend"
+        />
+        <meta name="author" content="Andrej Spinej" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="ru, en" />
+        <meta name="theme-color" content="dark" />
+        <meta name="og:title" content="Andrej Spinej" />
+        <meta name="og:description" content="Сайт портфолио" />
+        <meta name="og:image" content="./img/assets/logo-website.png" />
+        <meta name="og:url" content="https://spinej.com" />
+        <link rel="stylesheet" href="./styles/fonts/stylesheet.css" />
+        <link rel="stylesheet" href="./styles/bootstrap/bootstrap.css" />
+        <link rel="stylesheet" href="./styles/normalize.css" />
+        <link rel="stylesheet" href="./styles/style.css" />
+        <script defer src="./js/bootstrap/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    </head>
+    <body id="playpen">
+        <div class="header-b">
+            <header class="p-3 text-white">
+                <div class="container">
+                    <div
+                        class="header d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+                    >
+                        <a
+                            href="index.html"
+                            class="p-0 d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+                            ><img
+                                decoding="async"
+                                src="./img/assets/logo-website.webp"
+                                alt="logo-green"
+                                class="header__logo" /></a
+                        ><a
+                            href="index.html"
+                            class="p-0 d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+                            ><img
+                                decoding="async"
+                                src="./img/assets/logo-website__orange.webp"
+                                alt="logo-orange"
+                                class="header__logo header__logo-orange"
+                        /></a>
+                        <div
+                            class="header__button-wrapper col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+                        >
+                            <div class="header__lang-wrapper">
+                                <a
+                                    class="header__btn rus btn btn-outline-light"
+                                    style="background-color: #00c26a"
+                                    href="./index.html"
+                                    >RU</a
+                                >
+                                <a
+                                    class="header__btn eng btn btn-outline-light"
+                                    href="./index_en.html"
+                                    >EN</a
+                                >
+                            </div>
+                        </div>
+                        <ul class="nav text-end">
+                            <li>
+                                <a
+                                    href="#about-me"
+                                    class="header__nav-link nav-link px-2 text-secondary"
+                                    >Обо мне</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#skills"
+                                    class="header__nav-link nav-link px-2 text-white"
+                                    >Навыки</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#project"
+                                    class="header__nav-link nav-link px-2 text-white"
+                                    >Проекты</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#experience"
+                                    class="header__nav-link nav-link px-2 text-white"
+                                    >Опыт</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#contact"
+                                    class="header__nav-link nav-link px-2 text-white"
+                                    >Контакты</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <article class="hero">
+                    <div class="container hero__container padding__container">
+                        <h1 class="hero__title">Привет, меня зовут</h1>
+                        <h2 class="hero__name">Андрей Спиней</h2>
+                        <div class="typing-text">
+                            <span class="hero__descr" id="element"></span>
+                        </div>
+                        <p class="hero__about">
+                            Я web разработчик, специализируюсь на создании
+                            цифровых технологий. В настоящее время я
+                            сосредоточен на создании доступных, ориентированных
+                            на человека решений и продуктов.
+                        </p>
+                    </div>
+                </article>
+                <section class="about">
+                    <div class="about__wrapper container padding__container">
+                        <div class="about__title scroll-animation-left">
+                            <h2 class="about__us margin__text">Обо мне</h2>
+                            <div class="about__container">
+                                <div class="about__block" id="about-me">
+                                    <div class="block__info">
+                                        <p>
+                                            Мне нравится создавать вещи, которые
+                                            живут в&nbsp;интернете. Мой интерес
+                                            к&nbsp;веб-разработке начался еще
+                                            в&nbsp;2020&nbsp;году, когда
+                                            я&nbsp;решил попробовать создать
+                                            сайт. И&nbsp;оказывается, создание
+                                            даже пользовательской кнопки научило
+                                            меня многому!
+                                        </p>
+                                        <p>
+                                            Перенесемся в&nbsp;сегодняшний день:
+                                            мне посчастливилось работать
+                                            в&nbsp;рекламном агентстве,
+                                            небольшой компании по&nbsp;продаже
+                                            товаров со&nbsp;своим сайтом где
+                                            я&nbsp;был Frontend разработчиком.
+                                            Решал бизнес задачи путем разработки
+                                            новых фичей. Продолжительное время
+                                            работал fullstack разработчиком на
+                                            PHP. Успешно разработал
+                                            и&nbsp;запустил интернет-магазин,
+                                            интегрировав нужный функционал под
+                                            бизнес задачи.
+                                        </p>
+                                        <p>
+                                            Много времени я&nbsp;занимался
+                                            продвижением сайтов в&nbsp;сети,
+                                            знаю семантическую верстку, знаком
+                                            с&nbsp;техническим SEO. Знаю как
+                                            настроить и&nbsp;опубликовать проект
+                                            на&nbsp;сервере. И настроить
+                                            рекламные каналы.
+                                        </p>
+                                        <p>
+                                            В свободное время продолжаю изучать
+                                            новые технологии которые будут
+                                            полезны мне в&nbsp;работе, пишу свои
+                                            pet-проекты. Сейчас изучаю
+                                            React(NextJS), Node.js, TypeScript.
+                                            Хочу развиваться в направлении Full
+                                            Stack.
+                                        </p>
+                                        <p>
+                                            Вот несколько технологий,
+                                            с&nbsp;которыми я&nbsp;работал
+                                            в&nbsp;последнее время:
+                                        </p>
+                                    </div>
+                                    <div class="about__skills-wrapper">
+                                        <ul class="about__skills">
+                                            <li class="about__list">JS</li>
+                                            <li class="about__list">NextJS</li>
+                                            <li class="about__list">NodeJS</li>
+                                            <li class="about__list">PHP</li>
+                                            <li class="about__list">
+                                                Bitrix Framework
+                                            </li>
+                                            <li class="about__list">Git</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="about__photo">
+                                    <img
+                                        decoding="async"
+                                        class="photo__card"
+                                        src="./assets/img/my-1280.webp"
+                                        srcset="
+                                            ./img/assets/my-480.webp   480w,
+                                            ./img/assets/my-768.webp   768w,
+                                            ./img/assets/my-1280.webp 1280w
+                                        "
+                                        sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 1280px"
+                                        alt="Andrej Spinej"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="skills" id="skills">
+                    <div
+                        class="skills__wrapper container scroll-animation-right"
+                    >
+                        <div class="row">
+                            <h2 class="skills__title margin__text">Skills</h2>
+                            <h3 class="skills__description">
+                                Навыки, инструменты и технологии, в которых я
+                                разбираюсь:
+                            </h3>
+                            <div class="skills__block">
+                                <ul class="skills__list">
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/js.webp"
+                                            alt="JS_icon"
+                                        />JavaScript
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/react.webp"
+                                            alt="React_icon"
+                                        />React
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/node.webp"
+                                            alt="Node_icon"
+                                        />Node.js
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/docker.webp"
+                                            alt="Docker_icon"
+                                        />Docker
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/html.webp"
+                                            alt="HTML_icon"
+                                        />HTML
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/css.webp"
+                                            alt="CSS_icon"
+                                        />CSS
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/php.webp"
+                                            alt="PHP_icon"
+                                        />PHP
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/python.webp"
+                                            alt="Python_icon"
+                                        />Python
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/redux.webp"
+                                            alt="Redux_icon"
+                                        />Redux
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/sql.webp"
+                                            alt="SQL_icon"
+                                        />SQL
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/bootstap.webp"
+                                            alt="Bootstrap_icon"
+                                        />Bootstrap
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/wordpress.webp"
+                                            alt="WordPress_icon"
+                                        />WordPress
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/git.webp"
+                                            alt="Git_icon"
+                                        />Git
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/npm.webp"
+                                            alt="NPM_icon"
+                                        />npm
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/bash.webp"
+                                            alt="Bash_icon"
+                                        />bash
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/linux.webp"
+                                            alt="Linux_icon"
+                                        />Linux
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="jobs" id="project">
+                    <div
+                        class="container padding__container wrapper-margin scroll-animation-left"
+                    >
+                        <h2 class="jobs__title margin__text">Проекты</h2>
+                        <div class="project-container">
+                            <div class="project-first-line">
+                                <div class="card-body">
+                                    <img
+                                        decoding="async"
+                                        class="project__img"
+                                        src="./img/project/tigai_preview.webp"
+                                        alt="todo-app-preview"
+                                    />
+                                    <div class="card__wrapper">
+                                        <h5 class="card-title">
+                                            React Web App - Тренер по фитнесу
+                                        </h5>
+                                        <p class="card-text special-text">
+                                            Это адаптивное веб-приложение. Все
+                                            компоненты переиспользуемые. В
+                                            проекте используется framer-motion,
+                                            библиотека для создания анимаций в
+                                            React. Для реализации плавного
+                                            скроллинга по странице используется
+                                            react-scroll. Функционал отправки
+                                            заявок реализован с помощью emailjs.
+                                            React-helmet для SEO оптимизации.
+                                        </p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a
+                                            class="card-link project__link-preview d-flex"
+                                            href="https://tigay.ru/"
+                                            target="_blank"
+                                            >Live Preview</a
+                                        ><a
+                                            class="card-link project__link-code d-flex"
+                                            href="https://github.com/Father1993/Aleksey-Tigay-website"
+                                            target="_blank"
+                                            >View Code</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <img
+                                        decoding="async"
+                                        class="project__img"
+                                        src="./img/project/store_app.webp"
+                                        alt="todo-app-preview"
+                                    />
+                                    <div class="card__wrapper">
+                                        <h5 class="card-title">
+                                            Интернет-магазин на React
+                                        </h5>
+                                        <p class="card-text">
+                                            Включает различные функции,
+                                            отображение списка товаров,
+                                            фильтрация товаров по бренду, цене и
+                                            названию, постраничная навигация и
+                                            кнопка для прокрутки страницы вверх.
+                                            Данные загружается и фильтруются
+                                            через запросы к API.
+                                        </p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a
+                                            class="card-link project__link-preview d-flex"
+                                            href="https://main--somestorespinej.netlify.app/"
+                                            target="_blank"
+                                            >Live Preview</a
+                                        ><a
+                                            class="card-link project__link-code d-flex"
+                                            href="https://github.com/Father1993/Online-jewelry-store-via-API"
+                                            target="_blank"
+                                            >View Code</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <img
+                                        decoding="async"
+                                        class="project__img"
+                                        src="./img/project/xinros_preview.webp"
+                                        alt="xinroshh-site-preview"
+                                    />
+                                    <div class="card__wrapper">
+                                        <h5 class="card-title">Xinrosh</h5>
+                                        <p class="card-text">
+                                            Landing page для китайской компании
+                                            по параллельному импорту запчастей и
+                                            спецтехники в РФ.
+                                            HTML/CSS/JS/Bootstrap
+                                        </p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a
+                                            class="card-link project__link-preview d-flex"
+                                            href="#"
+                                            target="_blank"
+                                            >Live Preview</a
+                                        ><a
+                                            class="card-link project__link-code d-flex"
+                                            href="#"
+                                            target="_blank"
+                                            >View Code</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-second-line d-none">
+                                <div class="card-body">
+                                    <img
+                                        decoding="async"
+                                        class="project__img"
+                                        src="./img/project/lib_app.webp"
+                                        alt="lib_app-preview"
+                                    />
+                                    <div class="card__wrapper">
+                                        <h5 class="card-title">
+                                            Books Library App
+                                        </h5>
+                                        <p class="card-text">
+                                            Веб-приложение на React, которое
+                                            позволяет пользователям управлять
+                                            своей библиотекой. В проекте есть
+                                            API с использованием Express
+                                        </p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a
+                                            class="card-link project__link-code d-flex"
+                                            href="https://github.com/Father1993/Books-Library-App"
+                                            target="_blank"
+                                            >View Code</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <img
+                                        decoding="async"
+                                        class="project__img"
+                                        src="./img/project/es-dv_preview.webp"
+                                        alt="es-dv_site-preview"
+                                    />
+                                    <div class="card__wrapper">
+                                        <h5 class="card-title">
+                                            Электросистемы
+                                        </h5>
+                                        <p class="card-text">
+                                            Современный сайт-визитка на PHP.
+                                            Адаптивный дизайн, SEO-оптимизация.
+                                        </p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a
+                                            class="card-link project__link-preview d-flex"
+                                            href="https://es-dv.ru"
+                                            target="_blank"
+                                            >Live Preview</a
+                                        ><a
+                                            class="card-link project__link-code d-flex"
+                                            href="https://github.com/Father1993/es-dv"
+                                            target="_blank"
+                                            >View Code</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <img
+                                        decoding="async"
+                                        class="project__img"
+                                        src="./img/project/plumber_preview.webp"
+                                        alt="todo-app-preview"
+                                    />
+                                    <div class="card__wrapper">
+                                        <h5 class="card-title">
+                                            Landing page - Сантехнические работы
+                                        </h5>
+                                        <p class="card-text">
+                                            Веб-сайт компании, предоставляющей
+                                            услуги по&nbsp;сантехнике. Сайт
+                                            разработан с&nbsp;использованием
+                                            HTML, CSS, JS&nbsp;и&nbsp;Bootstrap.
+                                        </p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a
+                                            class="card-link project__link-preview d-flex"
+                                            href="https://plumkhv.netlify.app/"
+                                            target="_blank"
+                                            >Live Preview</a
+                                        ><a
+                                            class="card-link project__link-code d-flex"
+                                            href="https://github.com/Father1993/Plumber-regional-site"
+                                            target="_blank"
+                                            >View Code</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-third-line d-none">
+                                <div class="card-body">
+                                    <img
+                                        decoding="async"
+                                        class="project__img"
+                                        src="./img/project/perevozka27_preview.webp"
+                                        alt="wordpress-sites"
+                                    />
+                                    <div class="card__wrapper">
+                                        <h5 class="card-title">WordPress</h5>
+                                        <p class="card-text">
+                                            Есть несколько сайтов написанных на
+                                            WordPress в продакшене.<br />
+                                            Простые landing page для местных
+                                            фирм. Сделаны на WordPress
+                                        </p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a
+                                            class="card-link project__link-preview spec-links d-flex"
+                                            href="https://perevozka27.ru/"
+                                            target="_blank"
+                                            >perevozka27.ru</a
+                                        ><a
+                                            class="card-link project__link-preview spec-links d-flex"
+                                            href="https://xn--90anbgibdchfetk.xn--p1ai/"
+                                            target="_blank"
+                                            >помнимскорбим.рф</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <img
+                                        decoding="async"
+                                        class="project__img"
+                                        src="./img/project/students-form_preview.webp"
+                                        alt="memories-game"
+                                    />
+                                    <div class="card__wrapper">
+                                        <h5 class="card-title">
+                                            Приложение для управления данными
+                                            студентов
+                                        </h5>
+                                        <p class="card-text">
+                                            Практика создания простого сервера
+                                            на&nbsp;HTTP, с&nbsp;обработкой GET,
+                                            POST запросов. Также практика
+                                            с&nbsp;npm, Express, dotenv
+                                            и&nbsp;стандартными модулями
+                                            Node.JS: path, http, fs, event.
+                                        </p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a
+                                            class="card-link project__link-code d-flex"
+                                            href="https://github.com/Father1993/Vanila-JS-Forms-Filter-Render"
+                                            target="_blank"
+                                            >View Code</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <img
+                                        decoding="async"
+                                        class="project__img"
+                                        src="./img/project/react_app_preview.webp"
+                                        alt="React-app-preview"
+                                    />
+                                    <div class="card__wrapper">
+                                        <h5 class="card-title">React app</h5>
+                                        <p class="card-text special-text">
+                                            API-запросы к&nbsp;серверу для
+                                            получения списка постов. Есть личный
+                                            кабинет, кастомные хуки для
+                                            улучшения функциональности,
+                                            и&nbsp;форму для создания постов.
+                                            Имеет функцию фильтрации
+                                            и&nbsp;сортировки постов,
+                                            а&nbsp;также постраничную пагинацию.
+                                            Реализована функция бесконечного
+                                            скролла, сделанная через невидимый
+                                            блок, который позволяет подгружать
+                                            данные частично через API.
+                                            Приложение обеспечивает анимацию
+                                            загрузки при запросе на&nbsp;сервер,
+                                            делая ожидание более приятным.
+                                            Каждый пост можно открыть или
+                                            удалить отдельно.
+                                        </p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a
+                                            class="card-link project__link-code d-flex"
+                                            href="https://github.com/Father1993/React_app_practice/tree/master"
+                                            target="_blank"
+                                            >View Code</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-fourth-line d-none">
+                                <div class="card-body">
+                                    <img
+                                        decoding="async"
+                                        class="project__img"
+                                        src="./img/project/time_app_nodejs_preview.webp"
+                                        alt="docker-app-preview"
+                                    />
+                                    <div class="card__wrapper">
+                                        <h5 class="card-title">
+                                            Docker в проекте с API-сервером на
+                                            NodeJS + Express
+                                        </h5>
+                                        <p class="card-text">
+                                            Приложение Time состоит
+                                            из&nbsp;фронтенд-
+                                            и&nbsp;бэкенд-частей. Фронтенд
+                                            написан с&nbsp;помощью фреймворка
+                                            Vue.js. Бэкэнд написан
+                                            с&nbsp;использованием Node.js
+                                            и&nbsp;Express. База
+                                            данных&nbsp;&mdash; MySQL
+                                        </p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a
+                                            class="card-link project__link-code d-flex"
+                                            href="https://github.com/Father1993/Docker-full-practice"
+                                            target="_blank"
+                                            >View Code</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <img
+                                        decoding="async"
+                                        class="project__img"
+                                        src="./img/project/vanilla_js_preview.webp"
+                                        alt="memories-game-preview"
+                                    />
+                                    <div class="card__wrapper last-card">
+                                        <h5 class="card-title">
+                                            Vanilla JS game
+                                        </h5>
+                                        <p class="card-text">
+                                            Написана на нативном JavaScript.
+                                            setTimeout, анимация на СSS.
+                                        </p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a
+                                            class="card-link project__link-preview d-flex"
+                                            href="https://65c60a3cd060d29373d059d2--fascinating-quokka-0f8f87.netlify.app/"
+                                            target="_blank"
+                                            >Live Preview</a
+                                        ><a
+                                            class="card-link project__link-code d-flex"
+                                            href="https://github.com/Father1993/MemoryGameJS/tree/main"
+                                            target="_blank"
+                                            >View Code</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <img
+                                        decoding="async"
+                                        class="project__img"
+                                        src="./img/project/calc_preview.webp"
+                                        alt="calculate-app-preview"
+                                    />
+                                    <div class="card__wrapper">
+                                        <h5 class="card-title">
+                                            Калькулятор расчета стоимости авто
+                                            под заказ
+                                        </h5>
+                                        <p class="card-text">
+                                            Калькулятор может посчитать как
+                                            автомобили из&nbsp;Японии, так
+                                            и&nbsp;автомобили с&nbsp;Южной
+                                            Кореи. А&nbsp;так-же может высчитать
+                                            вашу ставку в&nbsp;йенах, исходя
+                                            из&nbsp;вашего бюджета (для
+                                            самостоятельной покупки авто
+                                            с&nbsp;аукционов Японии)
+                                        </p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a
+                                            class="card-link project__link-code d-flex"
+                                            href="https://github.com/Father1993/Foreign-car-buying-calculator"
+                                            target="_blank"
+                                            >View Code</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button id="showMoreBtn" class="show-more-btn">
+                                Показать еще
+                            </button>
+                        </div>
+                    </div>
+                    <div class="jobs__github text-center">
+                        <a
+                            class="jobs__btn btn btn-success jobs__link"
+                            href="https://github.com/Father1993"
+                            target="_blank"
+                            >Больше проектов на GitHub</a
+                        >
+                    </div>
+                </section>
+                <section class="work" id="experience">
+                    <div
+                        class="container padding__container wrapper-margin scroll-animation-right"
+                    >
+                        <h2 class="work__title margin__text">Опыт работы</h2>
+                        <div class="work__desc">
+                            <h4>Краткая информация из моего крайнего опыта</h4>
+                        </div>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingZero">
+                                    <button
+                                        class="accordion-button"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseZero"
+                                        aria-expanded="true"
+                                        aria-controls="collapseZero"
+                                    >
+                                        <strong
+                                            >FullStack-разработчик на PHP @
+                                            Электросистемы</strong
+                                        >
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapseZero"
+                                    class="accordion-collapse collapse show"
+                                    aria-labelledby="headingZero"
+                                    data-bs-parent="#accordionExample"
+                                >
+                                    <div class="accordion-body">
+                                        <p>
+                                            &bull; Разрабатывал
+                                            и&nbsp;кастоматизировал компоненты
+                                            и&nbsp;модули, адаптируя их под
+                                            бизнес-задачи, используя
+                                            объектно-ориентированный подход.<br />
+                                            &bull; Реализовал интеграцию
+                                            с&nbsp;платежной системой,
+                                            кастомизировал синхронизацию данных
+                                            с&nbsp;1С&nbsp;в&nbsp;режиме
+                                            реального времени для оперативного
+                                            получения информации о&nbsp;заказах
+                                            и платежах.<br />
+                                            &bull; Разработал анкету лояльности
+                                            на сайте, телефон из&nbsp;анкеты
+                                            сначала проходит валидацию
+                                            по&nbsp;коду из&nbsp;смс на
+                                            стороне&nbsp;1с, после все данные
+                                            отправляются на&nbsp;сервер 1с.<br />
+                                            &bull; Внедрил систему контроля
+                                            версий Git для организации работы и
+                                            отслеживания изменений.<br />
+                                            &bull; Перенес весь кастом
+                                            в&nbsp;local и полностью обновил
+                                            ядро сайта, все сторонние модули
+                                            и&nbsp;MySQL до&nbsp;версии 8.0.<br />
+                                            &bull; Отладил работу полного обмена
+                                            из 1с&nbsp;на&nbsp;сайт
+                                            и&nbsp;расширил его функционал.
+                                            (Важно было получать заказы
+                                            и&nbsp;данные об&nbsp;онлайн оплате
+                                            моментально на&nbsp;сервер 1с).<br />
+                                            &bull; Переносил проекты
+                                            на&nbsp;VPS-сервера, настраивая
+                                            серверную инфраструктуру
+                                            индивидуально под требования каждого
+                                            проекта.<br />
+                                            &bull; Оптимизировал
+                                            производительность веб-приложения,
+                                            сократив время загрузки страниц
+                                            на&nbsp;30%.<br />
+                                            &bull; Сопровождал разработку
+                                            подробными комментариями
+                                            и&nbsp;технической документацией для
+                                            облегчения дальнейшего обслуживания
+                                            и&nbsp;развития системы.<br />
+                                        </p>
+                                        <button>PHP</button
+                                        ><button>Bitrix Framework</button
+                                        ><button>MySQL</button
+                                        ><button>JavaScript</button
+                                        ><button>jQuery</button
+                                        ><button>Git</button
+                                        ><button>Composer</button
+                                        ><button>Bash</button
+                                        ><button>Linux</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button
+                                        class="accordion-button"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne"
+                                        aria-expanded="false"
+                                        aria-controls="collapseOne"
+                                    >
+                                        <strong
+                                            >Frontend-разработчик @
+                                            Металлрезерв</strong
+                                        >
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapseOne"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample"
+                                >
+                                    <div class="accordion-body">
+                                        <p>
+                                            • Создавал и добавлял элементы и
+                                            блоки, верстка сайта и рекламных
+                                            лендингов, правки в продакшн,
+                                            добавлял новый функционал на
+                                            сайт.<br />
+                                            • SEO оптимизация, настройка
+                                            Директа, анализ метрики.<br />
+                                            • Создание рекламного контента в
+                                            графических редакторах.<br />
+                                            • Аналитика спроса.<br />
+                                            • SMM вел социальные сети и аккаунты
+                                            на торговых площадках.
+                                        </p>
+                                        <button>JavaScript</button
+                                        ><button>PHP</button
+                                        ><button>HTML</button
+                                        ><button>Dev0ps</button
+                                        ><button>Bootstrap</button
+                                        ><button>SQL</button
+                                        ><button>WordPress</button
+                                        ><button>SEO</button
+                                        ><button>Webpack</button
+                                        ><button>Linux</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo"
+                                        aria-expanded="false"
+                                        aria-controls="collapseTwo"
+                                    >
+                                        <strong
+                                            >Администратор сайта @
+                                            AutoTokyo</strong
+                                        >
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapseTwo"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample"
+                                >
+                                    <div class="accordion-body">
+                                        <p>
+                                            • Верстка сайта, многостраничного
+                                            сайта по макетам и без, WordPress,
+                                            1C-Bitix, PHP, SEO.<br />
+                                            • Дебаггинг, работа с чужим кодом,
+                                            внесение правок.<br />
+                                            • SMM, Администрирование- telegram,
+                                            YouTube, ВК, Дзен. <br />
+                                            • Администрирование сайта. Реклама и
+                                            продвижение.<br />
+                                            • Работа с клиентами, обработка
+                                            заявок, общение в мессенджерах,
+                                            презентации, заключение сделок, CRM,
+                                            расширение клиентской базы.<br />
+                                            • Техническая поддержка<br />
+                                        </p>
+                                        <button>JavaScript</button
+                                        ><button>Python</button
+                                        ><button>HTML</button
+                                        ><button>WordPress</button
+                                        ><button>SEO</button
+                                        ><button>Soft skills</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree"
+                                        aria-expanded="false"
+                                        aria-controls="collapseThree"
+                                    >
+                                        <strong
+                                            >Мастер по ремонту компьютеров @
+                                            SV-service</strong
+                                        >
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapseThree"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample"
+                                >
+                                    <div class="accordion-body">
+                                        <p>
+                                            • Выезд к клиенту, установка ОС,
+                                            ПО.<br />
+                                            • Настройка оборудования.<br />
+                                            • Ремонт техники смартфоны, пк,
+                                            ноутбуки, телевизоры.<br />
+                                            • Чистка, несложная пайка,
+                                            диагностика.<br />
+                                        </p>
+                                        <button>Soft skills</button
+                                        ><button>
+                                            Навыки общения и продаж
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section
+                    class="container contact__section d-flex flex-column scroll-animation-left"
+                >
+                    <h5 class="text-center contact__title">Предложения?</h5>
+                    <p class="text-center contact__descr">
+                        Хотя я в данный момент не ищу новых возможностей, моя
+                        почта всегда открыта. Будь у вас вопрос или просто
+                        хотите сказать привет, я постараюсь ответить вам как
+                        можно скорее!
+                    </p>
+                    <a
+                        class="contact__email"
+                        href="mailto:enjoyhillol@gmail.com"
+                        ><span id="contact"></span
+                    ></a>
+                </section>
+            </main>
+            <div class="container">
+                <footer
+                    class="footer__block d-flex flex-wrap justify-content-between align-items-center py-3 my-4"
+                >
+                    <div class="footer__contacts-lg">
+                        <ul class="footer__nav-lg d-flex">
+                            <li class="ms-3">
+                                <a
+                                    class="text-muted"
+                                    target="_blank"
+                                    href="https://t.me/Anri_khv"
+                                    ><img
+                                        decoding="async"
+                                        class="footer__links-hover-md"
+                                        src="./img/social/telegram.svg"
+                                        alt="telegram_social_icon"
+                                /></a>
+                            </li>
+                            <li class="ms-3">
+                                <a
+                                    class="text-muted"
+                                    target="_blank"
+                                    href="https://wa.me/79098763797"
+                                    ><img
+                                        class="footer__links-hover-md"
+                                        decoding="async"
+                                        src="./img/social/whatsapp.svg"
+                                        alt="whatsapp_social_icon"
+                                /></a>
+                            </li>
+                            <li class="ms-3">
+                                <a
+                                    class="text-muted"
+                                    target="_blank"
+                                    href="https://github.com/Father1993"
+                                    ><img
+                                        class="footer__links-hover-md"
+                                        decoding="async"
+                                        src="./img/social/github.svg"
+                                        alt="github_social_icon"
+                                /></a>
+                            </li>
+                            <li class="ms-3">
+                                <a
+                                    class="text-muted"
+                                    target="_blank"
+                                    href="https://www.linkedin.com/in/andrey-spiney/"
+                                    ><img
+                                        class="footer__links-hover-md-last"
+                                        decoding="async"
+                                        src="./img/social/linkedin.svg"
+                                        alt="linkedin_social_icon"
+                                /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="footer__wrapper col-md-4 d-flex align-items-center mx-auto scroll-animation-right"
+                    >
+                        <span
+                            class="mb-3 mb-md-0 text-muted footer__text text-center"
+                            >&copy; 2024 Дизайн спроектирован в Figma, код
+                            написан в Visual Studio Code. Создано с помощью JS,
+                            HTML, CSS, Bootstrap. Собранно в Webpack и
+                            Gulp.</span
+                        >
+                    </div>
+                    <div class="footer__contacts">
+                        <ul class="footer__nav d-flex flex-column">
+                            <li class="ms-3">
+                                <a
+                                    class="text-muted"
+                                    target="_blank"
+                                    href="https://t.me/Anri_khv"
+                                    ><img
+                                        class="footer__links-hover"
+                                        decoding="async"
+                                        src="./img/social/telegram.svg"
+                                        alt="telegram_social_icon"
+                                /></a>
+                            </li>
+                            <li class="ms-3">
+                                <a
+                                    class="text-muted"
+                                    target="_blank"
+                                    href="https://wa.me/79098763797"
+                                    ><img
+                                        class="footer__links-hover"
+                                        decoding="async"
+                                        src="./img/social/whatsapp.svg"
+                                        alt="whatsapp_social_icon"
+                                /></a>
+                            </li>
+                            <li class="ms-3">
+                                <a
+                                    class="text-muted"
+                                    target="_blank"
+                                    href="https://github.com/Father1993"
+                                    ><img
+                                        class="footer__links-hover"
+                                        decoding="async"
+                                        src="./img/social/github.svg"
+                                        alt="github_social_icon"
+                                /></a>
+                            </li>
+                            <li class="ms-3">
+                                <a
+                                    class="text-muted"
+                                    target="_blank"
+                                    href="https://www.linkedin.com/in/andrey-spiney/"
+                                    ><img
+                                        class="footer__links-hover-last"
+                                        decoding="async"
+                                        src="./img/social/linkedin.svg"
+                                        alt="linkedin_social_icon"
+                                /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__email d-flex">
+                        <a
+                            class="footer__link"
+                            href="mailto:enjoyhillol@gmail.com"
+                            ><p class="email__mail">enjoyhillol@gmail.com</p></a
+                        >
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

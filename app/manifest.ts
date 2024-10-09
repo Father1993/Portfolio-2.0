@@ -5,8 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Spinej.ru',
     short_name: 'spinej.ru',
-    description:
-      'Сайт портфолио Спиней Андрей',
+    description: 'Сайт портфолио | Спиней Андрей',
     start_url: '/',
     background_color: '#fff',
     theme_color: '#fff',
@@ -14,7 +13,7 @@ export default function manifest(): MetadataRoute.Manifest {
     display: 'standalone',
     icons: [
       {
-        src: '/img/favicon.ico',
+        src: '/img/icon.ico',
         sizes: 'any',
         type: 'image/x-icon',
       },
@@ -36,11 +35,6 @@ export default function manifest(): MetadataRoute.Manifest {
       {
         src: '/img/android-chrome-192x192.png',
         sizes: '192x192',
-        type: 'image/png',
-      },
-      {
-        src: '/img/android-chrome-512x512.png',
-        sizes: '512x512',
         type: 'image/png',
       },
     ],
