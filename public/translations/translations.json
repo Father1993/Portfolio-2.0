@@ -1,12 +1,12 @@
 {
   "en": {
     "header": {
-      "all_link": "All!"
+      "all_link": "All"
     }
   },
   "ru": {
     "header": {
-      "all_link": "Все!"
+      "all_link": "Все"
     }
   }
 }
