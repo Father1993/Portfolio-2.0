@@ -3,8 +3,10 @@
 /* eslint-disable max-len */
 'use client'
 
+import { useLang } from '@/hooks/useLang'
+
 const Header = () => {
-  console.log('')
+  const { lang, translations } = useLang()
 
   return (
     <header className='p-3 text-white'>
@@ -55,7 +57,7 @@ const Header = () => {
                 href='#about-me'
                 className='header__nav-link nav-link px-2 text-secondary'
               >
-                Обо мне
+                {translations[lang].header.about}
               </a>
             </li>
             <li>
@@ -63,7 +65,7 @@ const Header = () => {
                 href='#skills'
                 className='header__nav-link nav-link px-2 text-white'
               >
-                Навыки
+                {translations[lang].header.skills}
               </a>
             </li>
             <li>
@@ -71,7 +73,7 @@ const Header = () => {
                 href='#project'
                 className='header__nav-link nav-link px-2 text-white'
               >
-                Проекты
+                {translations[lang].header.projects}
               </a>
             </li>
             <li>
@@ -79,7 +81,7 @@ const Header = () => {
                 href='#experience'
                 className='header__nav-link nav-link px-2 text-white'
               >
-                Опыт
+                {translations[lang].header.experience}
               </a>
             </li>
             <li>
@@ -87,7 +89,7 @@ const Header = () => {
                 href='#contact'
                 className='header__nav-link nav-link px-2 text-white'
               >
-                Контакты
+                {translations[lang].header.contacts}
               </a>
             </li>
           </ul>

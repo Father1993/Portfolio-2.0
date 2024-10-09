@@ -1,12 +1,26 @@
 {
   "en": {
     "header": {
-      "all_link": "All"
+      "about": "About",
+      "skills": "Skills",
+      "projects": "Projects",
+      "experience": "Experience",
+      "contacts": "Contacts"
+    },
+    "footer": {
+      "copyright": "&copy; 2024 Designed in Figma, coded in Visual Studio Code. Created with NextJS, Bootstrap, Tailwind."
     }
   },
   "ru": {
     "header": {
-      "all_link": "Все"
+      "about": "Обо мне",
+      "skills": "Навыки",
+      "projects": "Проекты",
+      "experience": "Опыт",
+      "contacts": "Контакты"
+    },
+    "footer": {
+      "copyright": "&copy; 2024 Дизайн спроектирован в Figma, код написан в Visual Studio Code. Создано с помощью NextJS, Bootstrap, Tailwind."
     }
   }
 }
