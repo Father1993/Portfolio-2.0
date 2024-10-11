@@ -128,7 +128,7 @@ const Projects = () => {
           </div>
         )}
       </div>
-      <div className='text-center mt-12'>
+      <div className='text-center'>
         <a
           href='https://github.com/Father1993'
           target='_blank'
