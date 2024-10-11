@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 @import url('/fonts/stylesheet.css');
 
 :root {
@@ -84,6 +84,7 @@ a {
 .container {
   max-width: 1320px;
   padding: 10px;
+  margin: 0 auto;
 }
 
 .margin__text {
@@ -93,6 +94,10 @@ a {
 
 .padding__container {
   margin-top: 170px;
+}
+
+.padding__left {
+  padding-left: 133px;
 }
 
 .hero__container {

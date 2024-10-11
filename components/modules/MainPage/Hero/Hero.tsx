@@ -5,7 +5,7 @@ import { useTyped } from '@/hooks/useTyped'
 
 const Hero = () => {
   const { lang, translations } = useLang()
-  // Печать текста из переводов
+  // Печать текста из перевод
   const typedEl = useTyped([
     translations[lang].hero.create_site,
     translations[lang].hero.site_dev,
@@ -13,7 +13,7 @@ const Hero = () => {
 
   return (
     <article className='hero'>
-      <div className='container hero__container padding__container'>
+      <div className='container hero__container padding__container padding__left'>
         <h1 className='hero__title'>{translations[lang].hero.hello}</h1>
         <h2 className='hero__name'>{translations[lang].hero.name}</h2>
         <div className='typing-text'>
