@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from 'next'
 import PagesLayout from '@/components/layouts/PageLayout'
 import './globalStyles/normalize.css'
 import './globalStyles/globals.css'
+import './globalStyles/header.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://spinej.ru'),
