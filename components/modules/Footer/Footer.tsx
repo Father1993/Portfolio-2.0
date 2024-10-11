@@ -1,21 +1,17 @@
-/* eslint-disable @next/next/no-img-element */
 /* eslint-disable max-len */
-
 import { useLang } from '@/hooks/useLang'
+import { useMediaQuery } from '@/hooks/useMediaQuery'
 
 const Footer = () => {
   const { lang, translations } = useLang()
+  const isMedia768 = useMediaQuery(768)
 
   return (
     <footer>
-      <div>
-        <ul className='footer__nav-lg d-flex'>
+      <div className='footer__contacts-lg justify-center items-center'>
+        <ul className='footer__nav-lg flex'>
           <li className='ms-3'>
-            <a
-              className='text-muted'
-              target='_blank'
-              href='https://t.me/Anri_khv'
-            >
+            <a target='_blank' href='https://t.me/Anri_khv'>
               <img
                 decoding='async'
                 className='footer__links-hover-md'
@@ -25,11 +21,7 @@ const Footer = () => {
             </a>
           </li>
           <li className='ms-3'>
-            <a
-              className='text-muted'
-              target='_blank'
-              href='https://wa.me/79098763797'
-            >
+            <a target='_blank' href='https://wa.me/79098763797'>
               <img
                 className='footer__links-hover-md'
                 decoding='async'
@@ -39,11 +31,7 @@ const Footer = () => {
             </a>
           </li>
           <li className='ms-3'>
-            <a
-              className='text-muted'
-              target='_blank'
-              href='https://github.com/Father1993'
-            >
+            <a target='_blank' href='https://github.com/Father1993'>
               <img
                 className='footer__links-hover-md'
                 decoding='async'
@@ -54,7 +42,6 @@ const Footer = () => {
           </li>
           <li className='ms-3'>
             <a
-              className='text-muted'
               target='_blank'
               href='https://www.linkedin.com/in/andrey-spiney/'
             >
@@ -68,76 +55,67 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className='footer__wrapper col-md-4 d-flex align-items-center mx-auto scroll-animation-right'>
-        <span className='mb-3 mb-md-0 text-muted footer__text text-center'>
+      <div className='footer__wrapper'>
+        <span className='mb-3 md:mb-0 text-gray-500 text-center footer__text'>
           {translations[lang].footer.copyright}
         </span>
       </div>
-      <div className='footer__contacts'>
-        <ul className='footer__nav d-flex flex-column'>
-          <li className='ms-3'>
-            <a
-              className='text-muted'
-              target='_blank'
-              href='https://t.me/Anri_khv'
-            >
-              <img
-                className='footer__links-hover'
-                decoding='async'
-                src='/img/social/telegram.svg'
-                alt='telegram_social_icon'
-              />
+      {!isMedia768 && (
+        <>
+          <div className='footer__contacts'>
+            <ul className='footer__nav d-flex flex-column'>
+              <li className='ms-3'>
+                <a target='_blank' href='https://t.me/Anri_khv'>
+                  <img
+                    className='footer__links-hover'
+                    decoding='async'
+                    src='/img/social/telegram.svg'
+                    alt='telegram_social_icon'
+                  />
+                </a>
+              </li>
+              <li className='ms-3'>
+                <a target='_blank' href='https://wa.me/79098763797'>
+                  <img
+                    className='footer__links-hover'
+                    decoding='async'
+                    src='/img/social/whatsapp.svg'
+                    alt='whatsapp_social_icon'
+                  />
+                </a>
+              </li>
+              <li className='ms-3'>
+                <a target='_blank' href='https://github.com/Father1993'>
+                  <img
+                    className='footer__links-hover'
+                    decoding='async'
+                    src='/img/social/github.svg'
+                    alt='github_social_icon'
+                  />
+                </a>
+              </li>
+              <li className='ms-3'>
+                <a
+                  target='_blank'
+                  href='https://www.linkedin.com/in/andrey-spiney/'
+                >
+                  <img
+                    className='footer__links-hover-last'
+                    decoding='async'
+                    src='/img/social/linkedin.svg'
+                    alt='linkedin_social_icon'
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className='footer__email'>
+            <a className='footer__link' href='mailto:enjoyhillol@gmail.com'>
+              <p>enjoyhillol@gmail.com</p>
             </a>
-          </li>
-          <li className='ms-3'>
-            <a
-              className='text-muted'
-              target='_blank'
-              href='https://wa.me/79098763797'
-            >
-              <img
-                className='footer__links-hover'
-                decoding='async'
-                src='/img/social/whatsapp.svg'
-                alt='whatsapp_social_icon'
-              />
-            </a>
-          </li>
-          <li className='ms-3'>
-            <a
-              className='text-muted'
-              target='_blank'
-              href='https://github.com/Father1993'
-            >
-              <img
-                className='footer__links-hover'
-                decoding='async'
-                src='/img/social/github.svg'
-                alt='github_social_icon'
-              />
-            </a>
-          </li>
-          <li className='ms-3'>
-            <a
-              className='text-muted'
-              target='_blank'
-              href='https://www.linkedin.com/in/andrey-spiney/'
-            >
-              <img
-                className='footer__links-hover-last'
-                decoding='async'
-                src='/img/social/linkedin.svg'
-                alt='linkedin_social_icon'
-              />
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div className='footer__email d-flex'>
-        <a className='footer__link' href='mailto:enjoyhillol@gmail.com'>
-          <p className='email__mail'>enjoyhillol@gmail.com</p>
-        </a>
-      </div>
+          </div>
+        </>
+      )}
     </footer>
   )
 }
