@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 @import url('/fonts/stylesheet.css');
-@import url('./bootstrap.css');
 
 :root {
   --background: rgb(39, 39, 39);

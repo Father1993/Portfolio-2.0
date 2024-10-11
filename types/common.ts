@@ -24,4 +24,5 @@ export interface LanguageButtonProps {
   currentLang: AllowedLangs
   onClick: () => void
   label: string
+  className?: string
 }

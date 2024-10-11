@@ -31,6 +31,7 @@ const Header = () => {
                 currentLang={lang}
                 onClick={() => handleSwitchLang(AllowedLangs.RU)}
                 label='Русский язык'
+                className='rus'
               />
               <LanguageButton
                 lang={AllowedLangs.EN}

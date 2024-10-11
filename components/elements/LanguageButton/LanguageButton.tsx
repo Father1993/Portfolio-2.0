@@ -6,9 +6,10 @@ const LanguageButton: React.FC<LanguageButtonProps> = ({
   currentLang,
   onClick,
   label,
+  className,
 }) => (
   <button
-    className={`header__btn ${lang.toLowerCase()} btn-outline-light ${currentLang === lang ? 'lang-active' : ''}`}
+    className={`header__btn ${lang.toLowerCase()} ${className} btn-outline-light ${currentLang === lang ? 'lang-active' : ''}`}
     onClick={onClick}
     style={{
       backgroundColor: currentLang === lang ? '#00c26a' : 'transparent',
