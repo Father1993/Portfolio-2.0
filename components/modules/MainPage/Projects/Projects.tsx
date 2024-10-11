@@ -94,8 +94,10 @@ const Projects = () => {
                   <h3 className='font-semibold text-xl mb-2'>
                     {project.title}
                   </h3>
-                  <p className='text-whitesmoke mb-4'>{project.description}</p>
-                  <div className='flex justify-between'>
+                  <p className='text-whitesmoke mb-20 text-xs'>
+                    {project.description}
+                  </p>
+                  <div className='flex justify-between test__test'>
                     <a
                       href={project.liveLink}
                       target='_blank'
