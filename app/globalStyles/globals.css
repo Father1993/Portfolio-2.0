@@ -791,13 +791,6 @@ a {
 }
 
 @media only screen and (max-width: 991px) {
-  .header__logo {
-    display: none;
-  }
-  .header__logo-orange {
-    display: block;
-  }
-
   .special-text {
     font-size: 20px;
     line-height: normal;
