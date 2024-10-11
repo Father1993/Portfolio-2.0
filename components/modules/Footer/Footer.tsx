@@ -1,6 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
 /* eslint-disable max-len */
-
 import { useLang } from '@/hooks/useLang'
 
 const Footer = () => {
@@ -9,13 +7,9 @@ const Footer = () => {
   return (
     <footer>
       <div>
-        <ul className='footer__nav-lg d-flex'>
+        <ul>
           <li className='ms-3'>
-            <a
-              className='text-muted'
-              target='_blank'
-              href='https://t.me/Anri_khv'
-            >
+            <a target='_blank' href='https://t.me/Anri_khv'>
               <img
                 decoding='async'
                 className='footer__links-hover-md'
@@ -25,11 +19,7 @@ const Footer = () => {
             </a>
           </li>
           <li className='ms-3'>
-            <a
-              className='text-muted'
-              target='_blank'
-              href='https://wa.me/79098763797'
-            >
+            <a target='_blank' href='https://wa.me/79098763797'>
               <img
                 className='footer__links-hover-md'
                 decoding='async'
@@ -39,11 +29,7 @@ const Footer = () => {
             </a>
           </li>
           <li className='ms-3'>
-            <a
-              className='text-muted'
-              target='_blank'
-              href='https://github.com/Father1993'
-            >
+            <a target='_blank' href='https://github.com/Father1993'>
               <img
                 className='footer__links-hover-md'
                 decoding='async'
@@ -54,7 +40,6 @@ const Footer = () => {
           </li>
           <li className='ms-3'>
             <a
-              className='text-muted'
               target='_blank'
               href='https://www.linkedin.com/in/andrey-spiney/'
             >
@@ -76,11 +61,7 @@ const Footer = () => {
       <div className='footer__contacts'>
         <ul className='footer__nav d-flex flex-column'>
           <li className='ms-3'>
-            <a
-              className='text-muted'
-              target='_blank'
-              href='https://t.me/Anri_khv'
-            >
+            <a target='_blank' href='https://t.me/Anri_khv'>
               <img
                 className='footer__links-hover'
                 decoding='async'
@@ -90,11 +71,7 @@ const Footer = () => {
             </a>
           </li>
           <li className='ms-3'>
-            <a
-              className='text-muted'
-              target='_blank'
-              href='https://wa.me/79098763797'
-            >
+            <a target='_blank' href='https://wa.me/79098763797'>
               <img
                 className='footer__links-hover'
                 decoding='async'
@@ -104,11 +81,7 @@ const Footer = () => {
             </a>
           </li>
           <li className='ms-3'>
-            <a
-              className='text-muted'
-              target='_blank'
-              href='https://github.com/Father1993'
-            >
+            <a target='_blank' href='https://github.com/Father1993'>
               <img
                 className='footer__links-hover'
                 decoding='async'
@@ -119,7 +92,6 @@ const Footer = () => {
           </li>
           <li className='ms-3'>
             <a
-              className='text-muted'
               target='_blank'
               href='https://www.linkedin.com/in/andrey-spiney/'
             >
@@ -133,9 +105,9 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className='footer__email d-flex'>
-        <a className='footer__link' href='mailto:enjoyhillol@gmail.com'>
-          <p className='email__mail'>enjoyhillol@gmail.com</p>
+      <div>
+        <a href='mailto:enjoyhillol@gmail.com'>
+          <p>enjoyhillol@gmail.com</p>
         </a>
       </div>
     </footer>

@@ -569,6 +569,7 @@ a {
 }
 
 .contact__email {
+  display: block;
   height: 65px;
   border: 1px solid var(--project-link-preview);
   padding: 20px;
@@ -576,8 +577,8 @@ a {
   color: var(--project-link-preview);
   text-decoration: none;
   cursor: pointer;
-  width: 167px;
-  margin: auto;
+  width: 167px !important;
+  margin: 0 auto;
 }
 
 .contact__email:hover {

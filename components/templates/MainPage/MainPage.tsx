@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 'use client'
 import About from '@/components/modules/MainPage/About/About'
+import Contacts from '@/components/modules/MainPage/Contacts/Contacts'
 import Experience from '@/components/modules/MainPage/Experience/Experience'
 import Hero from '@/components/modules/MainPage/Hero/Hero'
 import Projects from '@/components/modules/MainPage/Projects/Projects'
@@ -13,6 +14,7 @@ const MainPage = () => (
     <Skills />
     <Projects />
     <Experience />
+    <Contacts />
   </main>
 )
 

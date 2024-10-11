@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import Typed from 'typed.js'
 
-export const useTyped = (strings: string[], typeSpeed = 130) => {
+export const useTyped = (strings: string[], typeSpeed = 175) => {
   const el = useRef(null)
 
   useEffect(() => {
