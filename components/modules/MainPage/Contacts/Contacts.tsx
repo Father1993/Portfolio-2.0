@@ -1,7 +1,10 @@
+import Link from 'next/link'
 import { useLang } from '@/hooks/useLang'
+import { useTyped } from '@/hooks/useTyped'
 
 const Contacts = () => {
   const { lang, translations } = useLang()
+  const typedEl = useTyped([translations[lang].contacts.say_hello])
 
   return (
     <section className='container contact__section d-flex flex-column scroll-animation-left'>
@@ -11,9 +14,9 @@ const Contacts = () => {
       <p className='text-center contact__descr'>
         {translations[lang].contacts.text}
       </p>
-      <a className='contact__email' href='mailto:enjoyhillol@gmail.com'>
-        <span id='contact' />
-      </a>
+      <Link className='contact__email' href='mailto:enjoyhillol@gmail.com'>
+        <span id='contact' ref={typedEl} />
+      </Link>
     </section>
   )
 }

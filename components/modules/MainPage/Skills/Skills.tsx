@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from 'next/image'
 import { useLang } from '@/hooks/useLang'
+import { SKILLS } from '@/constants/skills'
 
 const Skills = () => {
   const { lang, translations } = useLang()
@@ -9,155 +11,23 @@ const Skills = () => {
       <div className='skills__wrapper container scroll-animation-right'>
         <div className='row'>
           <h2 className='skills__title margin__text'>Skills</h2>
-          <h3 className='skills__description'>
+          <h3 className='skills__description text-center'>
             {translations[lang].skills.text}
           </h3>
           <div className='skills__block'>
             <ul className='skills__list'>
-              <li>
-                <img
-                  decoding='async'
-                  className='skills__icon'
-                  src='/img/tech/js.png'
-                  alt='JS_icon'
-                />
-                JavaScript
-              </li>
-              <li>
-                <img
-                  decoding='async'
-                  className='skills__icon'
-                  src='/img/tech/react.png'
-                  alt='React_icon'
-                />
-                React
-              </li>
-              <li>
-                <img
-                  decoding='async'
-                  className='skills__icon'
-                  src='./img/tech/node.png'
-                  alt='Node_icon'
-                />
-                Node.js
-              </li>
-              <li>
-                <img
-                  decoding='async'
-                  className='skills__icon'
-                  src='/img/tech/docker.png'
-                  alt='Docker_icon'
-                />
-                Docker
-              </li>
-              <li>
-                <img
-                  decoding='async'
-                  className='skills__icon'
-                  src='/img/tech/html.png'
-                  alt='HTML_icon'
-                />
-                HTML
-              </li>
-              <li>
-                <img
-                  decoding='async'
-                  className='skills__icon'
-                  src='/img/tech/css.png'
-                  alt='CSS_icon'
-                />
-                CSS
-              </li>
-              <li>
-                <img
-                  decoding='async'
-                  className='skills__icon'
-                  src='/img/tech/php.png'
-                  alt='PHP_icon'
-                />
-                PHP
-              </li>
-              <li>
-                <img
-                  decoding='async'
-                  className='skills__icon'
-                  src='/img/tech/python.png'
-                  alt='Python_icon'
-                />
-                Python
-              </li>
-              <li>
-                <img
-                  decoding='async'
-                  className='skills__icon'
-                  src='/img/tech/redux.png'
-                  alt='Redux_icon'
-                />
-                Redux
-              </li>
-              <li>
-                <img
-                  decoding='async'
-                  className='skills__icon'
-                  src='/img/tech/sql.png'
-                  alt='SQL_icon'
-                />
-                SQL
-              </li>
-              <li>
-                <img
-                  decoding='async'
-                  className='skills__icon'
-                  src='/img/tech/bootstap.png'
-                  alt='Bootstrap_icon'
-                />
-                Bootstrap
-              </li>
-              <li>
-                <img
-                  decoding='async'
-                  className='skills__icon'
-                  src='/img/tech/wordpress.png'
-                  alt='WordPress_icon'
-                />
-                WordPress
-              </li>
-              <li>
-                <img
-                  decoding='async'
-                  className='skills__icon'
-                  src='/img/tech/git.png'
-                  alt='Git_icon'
-                />
-                Git
-              </li>
-              <li>
-                <img
-                  decoding='async'
-                  className='skills__icon'
-                  src='/img/tech/npm.png'
-                  alt='NPM_icon'
-                />
-                npm
-              </li>
-              <li>
-                <img
-                  decoding='async'
-                  className='skills__icon'
-                  src='/img/tech/bash.png'
-                  alt='Bash_icon'
-                />
-                bash
-              </li>
-              <li>
-                <img
-                  decoding='async'
-                  className='skills__icon'
-                  src='/img/tech/linux.png'
-                  alt='Linux_icon'
-                />
-                Linux
-              </li>
+              {SKILLS.map((skill) => (
+                <li key={skill.name}>
+                  <Image
+                    src={skill.icon}
+                    alt={`${skill.name}_icon`}
+                    width={65}
+                    height={65}
+                    className='skills__icon'
+                  />
+                  {skill.name}
+                </li>
+              ))}
             </ul>
           </div>
         </div>

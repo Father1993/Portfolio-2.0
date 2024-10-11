@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        background: 'var(--background)',
+        'text-color': 'var(--text-color)',
+        'accent-color': 'var(--accent-color)',
+        'header-link-hover': 'var(--header-link-hover)',
+      },
       backdropBlur: {
         xs: '2px',
       },

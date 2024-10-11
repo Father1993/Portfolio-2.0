@@ -10,7 +10,9 @@
     "hero": {
       "hello": "Hello, my name is",
       "name": "Andrej Spinej",
-      "text": "I am a web developer specializing in creating digital technologies. Currently, I am focused on creating accessible, human-centered solutions and products."
+      "text": "I am a web developer specializing in creating digital technologies. Currently, I am focused on creating accessible, human-centered solutions and products.",
+      "create_site": "I create web interfaces.",
+      "site_dev": "I am engaged in the development and refinement of websites."
     },
     "about": {
       "history_text_1": "I love making things that live on the internet. My interest in web development started back in 2020 when I decided to try making a website. And it turns out that even making a custom button taught me a lot!",
@@ -68,7 +70,8 @@
     },
     "contacts": {
       "offers": "Offers?",
-      "text": "Although I am not currently looking for new opportunities, my email is always open. If you have a question or just want to say hi, I will try to get back to you as soon as possible!"
+      "text": "Although I am not currently looking for new opportunities, my email is always open. If you have a question or just want to say hi, I will try to get back to you as soon as possible!",
+      "say_hello": "Say Hello..."
     },
     "footer": {
       "copyright": "&copy; 2024 Designed in Figma, coded in Visual Studio Code. Created with NextJS, Bootstrap, Tailwind."
@@ -91,7 +94,9 @@
     "hero": {
       "hello": "Привет, меня зовут",
       "name": "Андрей Спиней",
-      "text": "Я web разработчик, специализируюсь на создании цифровых технологий. В настоящее время я сосредоточен на создании доступных, ориентированных на человека решений и продуктов."
+      "text": "Я web разработчик, специализируюсь на создании цифровых технологий. В настоящее время я сосредоточен на создании доступных, ориентированных на человека решений и продуктов.",
+      "create_site": "Создаю web интерфейсы.",
+      "site_dev": "Занимаюсь разработкой и доработкой сайтов."
     },
     "about": {
       "history_text_1": "Мне нравится создавать вещи, которые живут в&nbsp;интернете.Мой интерес к&nbsp;веб-разработке начался еще в&nbsp;2020&nbsp;году, когда я&nbsp;решил попробовать создать сайт. И&nbsp;оказывается, создание даже пользовательской кнопки научило меня многому!",
@@ -149,7 +154,8 @@
     },
     "contacts": {
       "offers": "Предложения?",
-      "text": "Хотя я в данный момент не ищу новых возможностей, моя почта всегда открыта. Будь у вас вопрос или просто хотите сказать привет, я постараюсь ответить вам как можно скорее!"
+      "text": "Хотя я в данный момент не ищу новых возможностей, моя почта всегда открыта. Будь у вас вопрос или просто хотите сказать привет, я постараюсь ответить вам как можно скорее!",
+      "say_hello": "Say Hello..."
     },
     "footer": {
       "copyright": "&copy; 2024 Дизайн спроектирован в Figma, код написан в Visual Studio Code. Создано с помощью NextJS, Bootstrap, Tailwind."
