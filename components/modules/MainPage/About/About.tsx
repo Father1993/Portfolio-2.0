@@ -10,9 +10,9 @@ const About = () => {
   return (
     <motion.section {...basePropsForMotion} className='about'>
       <div className='about__wrapper container padding__container'>
-        <div className='about__title scroll-animation-left'>
+        <div className='about__title'>
           <h2 className='about__us margin__text'>Обо мне</h2>
-          <div className='about__container padding__left'>
+          <div className='about__container'>
             <div className='about__block' id='about-me'>
               <div className='block__info'>
                 <p>{translations[lang].about.history_text_1}</p>

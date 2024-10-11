@@ -296,10 +296,13 @@ a {
   margin-top: 50px;
   border-top: 1px var(--text-color) solid;
   width: 40%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .footer__text {
-  width: 400px;
+  display: block;
   padding-top: 30px;
   margin: 0 auto;
   font-size: 12.5px;
@@ -307,7 +310,7 @@ a {
 
 .footer__contacts {
   position: fixed;
-  left: 55px;
+  left: 92px;
   bottom: 130px;
 }
 
@@ -358,8 +361,8 @@ a {
 
 .footer__email {
   position: fixed;
-  right: 10px;
-  bottom: 230px;
+  right: 9px;
+  bottom: 250px;
 }
 
 .footer__email a {
@@ -367,6 +370,8 @@ a {
   color: var(--text-color);
   font-size: 14px;
   letter-spacing: 3px;
+  display: block;
+  transform: rotate(90deg);
 }
 
 .footer__email a:hover {
@@ -533,12 +538,6 @@ a {
   background-size: cover;
 }
 
-.footer__email,
-.footer__contacts {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
 .footer__link {
   transform: rotate(90deg);
 }
@@ -676,6 +675,7 @@ a {
   display: flex;
   flex-direction: column;
 }
+
 .footer__nav-lg li {
   list-style: none;
   margin-right: 20px;
