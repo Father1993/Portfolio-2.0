@@ -1,16 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
+import { motion } from 'framer-motion'
 import { ABOUT_SKILLS } from '@/constants/skills'
 import { useLang } from '@/hooks/useLang'
+import { basePropsForMotion } from '@/constants/motion'
 
 const About = () => {
   const { lang, translations } = useLang()
 
   return (
-    <section className='about'>
+    <motion.section {...basePropsForMotion} className='about'>
       <div className='about__wrapper container padding__container'>
         <div className='about__title scroll-animation-left'>
           <h2 className='about__us margin__text'>Обо мне</h2>
-          <div className='about__container'>
+          <div className='about__container padding__left'>
             <div className='about__block' id='about-me'>
               <div className='block__info'>
                 <p>{translations[lang].about.history_text_1}</p>
@@ -46,7 +48,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
 export default About

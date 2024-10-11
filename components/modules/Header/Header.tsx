@@ -3,12 +3,14 @@
 /* eslint-disable max-len */
 'use client'
 import { useCallback } from 'react'
+import { motion } from 'framer-motion'
 import { useLang } from '@/hooks/useLang'
 import { setLang } from '@/context/lang'
 import { AllowedLangs } from '@/constants/lang'
 import Navigation from './Navigation'
 import HeaderLogo from '@/components/elements/HeaderLogo/HeaderLogo'
 import LanguageButton from '@/components/elements/LanguageButton/LanguageButton'
+import { basePropsForMotion } from '@/constants/motion'
 
 const Header = () => {
   const { lang, translations } = useLang()
@@ -19,7 +21,7 @@ const Header = () => {
   }, [])
 
   return (
-    <header className='p-3 text-white'>
+    <motion.header {...basePropsForMotion} className='p-3 text-white'>
       <div className='container mx-auto'>
         <div className='header flex flex-wrap items-center justify-between'>
           <div className='flex items-center'>
@@ -45,7 +47,7 @@ const Header = () => {
           <Navigation lang={lang} translations={translations} />
         </div>
       </div>
-    </header>
+    </motion.header>
   )
 }
 
