@@ -18,7 +18,7 @@ const Skills = () => {
                 <img
                   decoding='async'
                   className='skills__icon'
-                  src='./img/tech/js.webp'
+                  src='/img/tech/js.png'
                   alt='JS_icon'
                 />
                 JavaScript
@@ -27,7 +27,7 @@ const Skills = () => {
                 <img
                   decoding='async'
                   className='skills__icon'
-                  src='./img/tech/react.webp'
+                  src='/img/tech/react.png'
                   alt='React_icon'
                 />
                 React
@@ -36,7 +36,7 @@ const Skills = () => {
                 <img
                   decoding='async'
                   className='skills__icon'
-                  src='./img/tech/node.webp'
+                  src='./img/tech/node.png'
                   alt='Node_icon'
                 />
                 Node.js
@@ -45,7 +45,7 @@ const Skills = () => {
                 <img
                   decoding='async'
                   className='skills__icon'
-                  src='./img/tech/docker.webp'
+                  src='/img/tech/docker.png'
                   alt='Docker_icon'
                 />
                 Docker
@@ -54,7 +54,7 @@ const Skills = () => {
                 <img
                   decoding='async'
                   className='skills__icon'
-                  src='./img/tech/html.webp'
+                  src='/img/tech/html.png'
                   alt='HTML_icon'
                 />
                 HTML
@@ -63,7 +63,7 @@ const Skills = () => {
                 <img
                   decoding='async'
                   className='skills__icon'
-                  src='./img/tech/css.webp'
+                  src='/img/tech/css.png'
                   alt='CSS_icon'
                 />
                 CSS
@@ -72,7 +72,7 @@ const Skills = () => {
                 <img
                   decoding='async'
                   className='skills__icon'
-                  src='./img/tech/php.webp'
+                  src='/img/tech/php.png'
                   alt='PHP_icon'
                 />
                 PHP
@@ -81,7 +81,7 @@ const Skills = () => {
                 <img
                   decoding='async'
                   className='skills__icon'
-                  src='./img/tech/python.webp'
+                  src='/img/tech/python.png'
                   alt='Python_icon'
                 />
                 Python
@@ -90,7 +90,7 @@ const Skills = () => {
                 <img
                   decoding='async'
                   className='skills__icon'
-                  src='./img/tech/redux.webp'
+                  src='/img/tech/redux.png'
                   alt='Redux_icon'
                 />
                 Redux
@@ -99,7 +99,7 @@ const Skills = () => {
                 <img
                   decoding='async'
                   className='skills__icon'
-                  src='./img/tech/sql.webp'
+                  src='/img/tech/sql.png'
                   alt='SQL_icon'
                 />
                 SQL
@@ -108,7 +108,7 @@ const Skills = () => {
                 <img
                   decoding='async'
                   className='skills__icon'
-                  src='./img/tech/bootstap.webp'
+                  src='/img/tech/bootstap.png'
                   alt='Bootstrap_icon'
                 />
                 Bootstrap
@@ -117,7 +117,7 @@ const Skills = () => {
                 <img
                   decoding='async'
                   className='skills__icon'
-                  src='./img/tech/wordpress.webp'
+                  src='/img/tech/wordpress.png'
                   alt='WordPress_icon'
                 />
                 WordPress
@@ -126,7 +126,7 @@ const Skills = () => {
                 <img
                   decoding='async'
                   className='skills__icon'
-                  src='./img/tech/git.webp'
+                  src='/img/tech/git.png'
                   alt='Git_icon'
                 />
                 Git
@@ -135,7 +135,7 @@ const Skills = () => {
                 <img
                   decoding='async'
                   className='skills__icon'
-                  src='./img/tech/npm.webp'
+                  src='/img/tech/npm.png'
                   alt='NPM_icon'
                 />
                 npm
@@ -144,7 +144,7 @@ const Skills = () => {
                 <img
                   decoding='async'
                   className='skills__icon'
-                  src='./img/tech/bash.webp'
+                  src='/img/tech/bash.png'
                   alt='Bash_icon'
                 />
                 bash
@@ -153,7 +153,7 @@ const Skills = () => {
                 <img
                   decoding='async'
                   className='skills__icon'
-                  src='./img/tech/linux.webp'
+                  src='/img/tech/linux.png'
                   alt='Linux_icon'
                 />
                 Linux

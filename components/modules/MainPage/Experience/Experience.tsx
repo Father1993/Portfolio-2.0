@@ -133,8 +133,10 @@ const Experience = () => {
             >
               <div className='accordion-body'>
                 <p>{translations[lang].experience.master_descriptions}</p>
+                <button>Computer hardware</button>
+                <button>Operating systems</button>
+                <button>Network technologies</button>
                 <button>Soft skills</button>
-                <button>Навыки общения и продаж</button>
               </div>
             </div>
           </div>

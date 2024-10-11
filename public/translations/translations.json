@@ -39,6 +39,33 @@
       "master": "Computer Repair Master @ SV-service",
       "master_descriptions": "• Visit to the client, installation of OS, software.<br />• Equipment setup.<br />• Repair of equipment: smartphones, PCs, laptops, TVs.<br />• Cleaning, simple soldering, diagnostics.<br />"
     },
+    "projects": {
+      "title": "Projects",
+      "react_web_app": "React Web App - Fitness Trainer",
+      "react_web_app_descr": "This is a responsive web application. All components are reusable. The project uses framer-motion, a library for creating animations in React. To implement smooth scrolling on the page, react-scroll is used. The functionality for sending requests is implemented using emailjs. React-helmet for SEO optimization.",
+      "i_shop": "Online store using React",
+      "i_shop_descr": "Includes various features, displaying a list of products, filtering products by brand, price and name, pagination navigation and a button to scroll the page up. Data is loaded and filtered through API requests.",
+      "xinrosh": "Xinrosh",
+      "xinrosh_descr": "Landing page for a Chinese company for parallel import of spare parts and special equipment to the Russian Federation. HTML/CSS/JS/Bootstrap",
+      "book_lib": "Books Library App",
+      "book_lib_descr": "A React web app that allows users to manage their library. The project has an API using Express",
+      "electrosystems": "Electrical systems",
+      "electrosystems_descr": "Modern business card website on PHP. Adaptive design, SEO optimization.",
+      "plumber": "Landing page - Plumbing works",
+      "plumber_descr": "Website of a plumbing services company. The site is developed using HTML, CSS, JS and Bootstrap.",
+      "wordpress_sites": "WordPress",
+      "wordpress_sites_descr": "There are several sites written on WordPress in production <br />Simple landing pages for local businesses. Made on WordPress",
+      "students_app": "Student Data Management Application",
+      "students_app_descr": "Practice of creating a simple server on HTTP, with processing of GET, POST requests. Also practice with npm, Express, dotenv and standard Node.JS modules: path, http, fs, event.",
+      "react_app_old": "React app",
+      "react_app_old_descr": "API requests to the server to get a list of posts. There is a personal account, custom hooks to improve functionality, and a form for creating posts. It has a function for filtering and sorting posts, as well as pagination. The infinite scroll function is implemented, made through an invisible block that allows you to partially load data through the API. The application provides loading animation when requesting to the server, making the wait more enjoyable. Each post can be opened or deleted separately.",
+      "docker_in_project": "Docker in a project with an API server on NodeJS + Express",
+      "docker_in_project_descr": "The Time app consists of frontend and backend parts. The frontend is written using the Vue.js framework. The backend is written using Node.js and Express. The database is MySQL",
+      "vanilla_js": "Vanilla JS game",
+      "vanilla_js_descr": "Written in native JavaScript. setTimeout, animation in CSS.",
+      "calculate_webapp": "Calculator for calculating the cost of a car to order",
+      "calculate_webapp_descr": "The calculator can count both cars from Japan and cars from South Korea. And it can also calculate your bid in yen based on your budget (for independent purchase of cars from Japanese auctions)"
+    },
     "contacts": {
       "offers": "Offers?",
       "text": "Although I am not currently looking for new opportunities, my email is always open. If you have a question or just want to say hi, I will try to get back to you as soon as possible!"
@@ -48,7 +75,9 @@
     },
     "common": {
       "not_fount": "Page not found",
-      "go_back": "Return to home page"
+      "go_back": "Return to home page",
+      "show_more": "Show more",
+      "more_projects_in_gitHub": "More projects on GitHub"
     }
   },
   "ru": {
@@ -83,13 +112,40 @@
       "experience": "Опыт работы",
       "title": "Краткая информация из моего крайнего опыта",
       "fullStack": "FullStack-разработчик на PHP @ Электросистемы",
-      "fullStack_descriptions": " &bull; Разрабатывал и&nbsp;кастоматизировал компоненты и&nbsp;модули, адаптируя их под бизнес-задачи, используя объектно-ориентированный подход.<br />&bull; Реализовал интеграцию с&nbsp;платежной системой, кастомизировал синхронизацию данных с&nbsp;1С&nbsp;в&nbsp;режиме реального времени для оперативного получения информации о&nbsp;заказах и платежах.<br />&bull; Разработал анкету лояльности на сайте, телефон из&nbsp;анкеты сначала проходит валидацию по&nbsp;коду из&nbsp;смс на стороне&nbsp;1с, после все данные отправляются на&nbsp;сервер 1с.<br />&bull; Внедрил систему контроля версий Git для организации работы и отслеживания изменений.<br />&bull; Перенес весь кастом в&nbsp;local и полностью обновил ядро сайта, все сторонние модули и&nbsp;MySQL до&nbsp;версии 8.0.<br />&bull; Отладил работу полного обмена из 1с&nbsp;на&nbsp;сайт и&nbsp;расширил его функционал. (Важно было получать заказы и&nbsp;данные об&nbsp;онлайн оплате моментально на&nbsp;сервер 1с).<br /> &bull; Переносил проекты на&nbsp;VPS-сервера, настраивая серверную инфраструктуру индивидуально под требования каждого проекта.<br /> &bull; Оптимизировал производительность веб-приложения, сократив время загрузки страниц на&nbsp;30%.<br />&bull; Сопровождал разработку подробными комментариями и&nbsp;технической документацией для облегчения дальнейшего обслуживания и&nbsp;развития системы.<br />",
+      "fullStack_descriptions": "&bull; Разрабатывал и&nbsp;кастоматизировал компоненты и&nbsp;модули, адаптируя их под бизнес-задачи, используя объектно-ориентированный подход.<br />&bull; Реализовал интеграцию с&nbsp;платежной системой, кастомизировал синхронизацию данных с&nbsp;1С&nbsp;в&nbsp;режиме реального времени для оперативного получения информации о&nbsp;заказах и платежах.<br />&bull; Разработал анкету лояльности на сайте, телефон из&nbsp;анкеты сначала проходит валидацию по&nbsp;коду из&nbsp;смс на стороне&nbsp;1с, после все данные отправляются на&nbsp;сервер 1с.<br />&bull; Внедрил систему контроля версий Git для организации работы и отслеживания изменений.<br />&bull; Перенес весь кастом в&nbsp;local и полностью обновил ядро сайта, все сторонние модули и&nbsp;MySQL до&nbsp;версии 8.0.<br />&bull; Отладил работу полного обмена из 1с&nbsp;на&nbsp;сайт и&nbsp;расширил его функционал. (Важно было получать заказы и&nbsp;данные об&nbsp;онлайн оплате моментально на&nbsp;сервер 1с).<br /> &bull; Переносил проекты на&nbsp;VPS-сервера, настраивая серверную инфраструктуру индивидуально под требования каждого проекта.<br /> &bull; Оптимизировал производительность веб-приложения, сократив время загрузки страниц на&nbsp;30%.<br />&bull; Сопровождал разработку подробными комментариями и&nbsp;технической документацией для облегчения дальнейшего обслуживания и&nbsp;развития системы.<br />",
       "frontend": "Frontend-разработчик @ Металлрезерв",
       "frontend_descriptions": "• Создавал и добавлял элементы и блоки, верстка сайта и рекламных лендингов, правки в продакшн, добавлял новый функционал на сайт.<br />• SEO оптимизация, настройка Директа, анализ метрики.<br />• Создание рекламного контента в графических редакторах.<br />• Аналитика спроса.<br />• SMM вел социальные сети и аккаунты на торговых площадках.",
       "administrator": "Администратор сайта @ AutoTokyo",
       "administrator_descriptions": "• Верстка сайта, многостраничного сайта по макетам и без, WordPress, 1C-Bitix, PHP, SEO. <br /> • Дебаггинг, работа с чужим кодом, внесение правок. <br />• SMM, Администрирование- telegram, YouTube, ВК, Дзен. <br />• Администрирование сайта. Реклама и продвижение. <br />• Работа с клиентами, обработка заявок, общение в мессенджерах, презентации, заключение сделок, CRM, расширение клиентской базы. <br />• Техническая поддержка <br />",
       "master": "Мастер по ремонту компьютеров @ SV-service",
       "master_descriptions": "• Выезд к клиенту, установка ОС, ПО.<br />• Настройка оборудования.<br />• Ремонт техники смартфоны, пк, ноутбуки, телевизоры.<br />• Чистка, несложная пайка, диагностика.<br />"
+    },
+    "projects": {
+      "title": "Проекты",
+      "react_web_app": "React Web App - Тренер по фитнесу",
+      "react_web_app_descr": "Это адаптивное веб-приложение. Все компоненты переиспользуемые В проекте используется framer-motion, библиотека для создания анимаций в React. Для реализации плавного скроллинга по странице используется react-scroll. Функционал отправки заявок реализован с помощью emailjs. React-helmet для SEO оптимизации.",
+      "i_shop": "Интернет-магазин на React",
+      "i_shop_descr": "Включает различные функции, отображение списка товаров, фильтрация товаров по бренду, цене и названию, постраничная навигация и кнопка для прокрутки страницы вверх. Данные загружается и фильтруются через запросы к API.",
+      "xinrosh": "Xinrosh",
+      "xinrosh_descr": "Landing page для китайской компании по параллельному импорту запчастей и спецтехники в РФ. HTML/CSS/JS/Bootstrap",
+      "book_lib": "Books Library App",
+      "book_lib_descr": "Веб-приложение на React, которое позволяет пользователям управлять своей библиотекой. В проекте есть API с использованием Express",
+      "electrosystems": "Электросистемы",
+      "electrosystems_descr": "Современный сайт-визитка на PHP. Адаптивный дизайн, SEO-оптимизация.",
+      "plumber": "Landing page - Сантехнические работы",
+      "plumber_descr": "Веб-сайт компании, предоставляющей услуги по&nbsp;сантехнике. Сайт разработан с&nbsp;использованием HTML, CSS, JS&nbsp;и&nbsp;Bootstrap.",
+      "wordpress_sites": "WordPress",
+      "wordpress_sites_descr": "Есть несколько сайтов написанных на WordPress в продакшене <br />Простые landing page для местных фирм. Сделаны на WordPress",
+      "students_app": "Приложение для управления данными студентов",
+      "students_app_descr": " Практика создания простого сервера на&nbsp;HTTP, с&nbsp;обработкой GET, POST запросов. Также практика с&nbsp;npm, Express, dotenv и&nbsp;стандартными модулями Node.JS: path, http, fs, event.",
+      "react_app_old": "React app",
+      "react_app_old_descr": "API-запросы к&nbsp;серверу для получения списка постов. Есть личный кабинет, кастомные хуки для улучшения функциональности, и&nbsp;форму для создания постов. Имеет функцию фильтрации и&nbsp;сортировки постов, а&nbsp;также постраничную пагинацию. Реализована функция бесконечного скролла, сделанная через невидимый блок, который позволяет подгружать данные частично через API. Приложение обеспечивает анимацию загрузки при запросе на&nbsp;сервер, делая ожидание более приятным. Каждый пост можно открыть или удалить отдельно.",
+      "docker_in_project": "Docker в проекте с API-сервером на NodeJS + Express",
+      "docker_in_project_descr": " Приложение Time состоит из&nbsp;фронтенд- и&nbsp бэкенд-частей. Фронтенд написан с&nbsp;помощью фреймворка Vue.js. Бэкэнд написан с&nbsp;использованием Node.js и&nbsp;Express. База данных&nbsp;&mdash; MySQL",
+      "vanilla_js": "Vanilla JS game",
+      "vanilla_js_descr": "Написана на нативном JavaScript. setTimeout, анимация на СSS.",
+      "calculate_webapp": "Калькулятор расчета стоимости авто под заказ",
+      "calculate_webapp_descr": "  Калькулятор может посчитать как автомобили из&nbsp;Японии, так и&nbsp;автомобили с&nbsp;Южной Кореи. А&nbsp;так-же может высчитать вашу ставку в&nbsp;йенах, исходя из&nbsp;вашего бюджета (для самостоятельной покупки авто с&nbsp;аукционов Японии)"
     },
     "contacts": {
       "offers": "Предложения?",
@@ -100,7 +156,9 @@
     },
     "common": {
       "not_fount": "Страница не найдена",
-      "go_back": "Вернуться на главную"
+      "go_back": "Вернуться на главную",
+      "show_more": "Показать еще",
+      "more_projects_in_gitHub": "Больше проектов на GitHub"
     }
   }
 }
