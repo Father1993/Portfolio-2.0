@@ -13,7 +13,7 @@ const Hero = () => {
 
   return (
     <article className='hero'>
-      <div className='container hero__container padding__container padding__left'>
+      <div className='container hero__container padding__container'>
         <h1 className='hero__title'>{translations[lang].hero.hello}</h1>
         <h2 className='hero__name'>{translations[lang].hero.name}</h2>
         <div className='typing-text'>

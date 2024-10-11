@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { ABOUT_SKILLS } from '@/constants/skills'
 import { useLang } from '@/hooks/useLang'
 
 const About = () => {
@@ -20,12 +21,11 @@ const About = () => {
               </div>
               <div className='about__skills-wrapper'>
                 <ul className='about__skills'>
-                  <li className='about__list'>JS</li>
-                  <li className='about__list'>NextJS</li>
-                  <li className='about__list'>NodeJS</li>
-                  <li className='about__list'>PHP</li>
-                  <li className='about__list'>Bitrix Framework</li>
-                  <li className='about__list'>Git</li>
+                  {ABOUT_SKILLS.map((skill) => (
+                    <li key={skill} className='about__list'>
+                      {skill}
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -35,10 +35,10 @@ const About = () => {
                 className='photo__card'
                 src='/img/assets/my-1280.webp'
                 srcSet='
-                                        /img/assets/my-480.webp   480w,
-                                        /img/assets/my-768.webp   768w,
-                                        /img/assets/my-1280.webp 1280w
-                                    '
+                  /img/assets/my-480.webp   480w,
+                  /img/assets/my-768.webp   768w,
+                  /img/assets/my-1280.webp 1280w
+                '
                 sizes='(max-width: 480px) 480px, (max-width: 768px) 768px, 1280px'
                 alt='Andrej Spinej'
               />
