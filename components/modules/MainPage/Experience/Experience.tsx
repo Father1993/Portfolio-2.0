@@ -1,145 +1,125 @@
+import { useState } from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
 import { useLang } from '@/hooks/useLang'
 
 const Experience = () => {
   const { lang, translations } = useLang()
+  const [activeIndex, setActiveIndex] = useState(0)
+
+  const experienceItems = [
+    {
+      title: translations[lang].experience.fullStack,
+      description: translations[lang].experience.fullStack_descriptions,
+      skills: [
+        'PHP',
+        'Bitrix Framework',
+        'MySQL',
+        'JavaScript',
+        'jQuery',
+        'Git',
+        'Composer',
+        'Bash',
+        'Linux',
+      ],
+    },
+    {
+      title: translations[lang].experience.frontend,
+      description: translations[lang].experience.frontend_descriptions,
+      skills: [
+        'JavaScript',
+        'PHP',
+        'HTML',
+        'DevOps',
+        'Bootstrap',
+        'SQL',
+        'WordPress',
+        'SEO',
+        'Webpack',
+        'Linux',
+      ],
+    },
+    {
+      title: translations[lang].experience.administrator,
+      description: translations[lang].experience.administrator_descriptions,
+      skills: [
+        'JavaScript',
+        'Python',
+        'HTML',
+        'WordPress',
+        'SEO',
+        'Soft skills',
+      ],
+    },
+    {
+      title: translations[lang].experience.master,
+      description: translations[lang].experience.master_descriptions,
+      skills: [
+        'Computer hardware',
+        'Operating systems',
+        'Network technologies',
+        'Soft skills',
+      ],
+    },
+  ]
+
+  // Функция для безопасного рендеринга HTML
+  const createMarkup = (html: string) => {
+    return { __html: html }
+  }
 
   return (
-    <section className='work' id='experience'>
-      <div className='container padding__container wrapper-margin scroll-animation-right'>
+    <section className='py-16 mt-16' id='experience'>
+      <div className='container mx-auto px-4'>
         <h2 className='work__title margin__text'>
           {translations[lang].experience.experience}
         </h2>
-        <div className='work__desc'>
-          <h4>{translations[lang].experience.title}</h4>
-        </div>
-        <div className='accordion' id='accordionExample'>
-          <div className='accordion-item'>
-            <h2 className='accordion-header' id='headingZero'>
+
+        <div className='max-w-4xl mx-auto'>
+          {experienceItems.map((item, index) => (
+            <div key={index} className='mb-8'>
               <button
-                className='accordion-button'
-                type='button'
-                data-bs-toggle='collapse'
-                data-bs-target='#collapseZero'
-                aria-expanded='true'
-                aria-controls='collapseZero'
+                className={`border w-full text-left p-6 rounded-lg transition-all duration-300 ${
+                  activeIndex === index ? 'shadow-lg' : 'hover:bg-gray-700'
+                }`}
+                onClick={() =>
+                  setActiveIndex(index === activeIndex ? -1 : index)
+                }
               >
-                <strong>{translations[lang].experience.fullStack}</strong>
+                <div className='flex justify-between items-center'>
+                  <h3 className='text-sm font-semibold text-white'>
+                    {item.title}
+                  </h3>
+                </div>
               </button>
-            </h2>
-            <div
-              id='collapseZero'
-              className='accordion-collapse collapse show'
-              aria-labelledby='headingZero'
-              data-bs-parent='#accordionExample'
-            >
-              <div className='accordion-body'>
-                <p>{translations[lang].experience.fullStack_descriptions}</p>
-                <button>PHP</button>
-                <button>Bitrix Framework</button>
-                <button>MySQL</button>
-                <button>JavaScript</button>
-                <button>jQuery</button>
-                <button>Git</button>
-                <button>Composer</button>
-                <button>Bash</button>
-                <button>Linux</button>
-              </div>
+              <AnimatePresence>
+                {activeIndex === index && (
+                  <motion.div
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: 'auto' }}
+                    exit={{ opacity: 0, height: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className=' rounded-b-lg p-6 mt-1'
+                  >
+                    <p
+                      className='text-gray-300 text-sm mb-4'
+                      dangerouslySetInnerHTML={createMarkup(item.description)}
+                    />
+
+                    <div className='flex flex-wrap gap-2'>
+                      {item.skills.map((skill, skillIndex) => (
+                        <span
+                          key={skillIndex}
+                          className='px-1 text-white rounded-full text-sm border'
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </div>
-          </div>
-          <div className='accordion-item'>
-            <h2 className='accordion-header' id='headingOne'>
-              <button
-                className='accordion-button'
-                type='button'
-                data-bs-toggle='collapse'
-                data-bs-target='#collapseOne'
-                aria-expanded='false'
-                aria-controls='collapseOne'
-              >
-                <strong>{translations[lang].experience.frontend}</strong>
-              </button>
-            </h2>
-            <div
-              id='collapseOne'
-              className='accordion-collapse collapse'
-              aria-labelledby='headingOne'
-              data-bs-parent='#accordionExample'
-            >
-              <div className='accordion-body'>
-                <p>{translations[lang].experience.frontend_descriptions}</p>
-                <button>JavaScript</button>
-                <button>PHP</button>
-                <button>HTML</button>
-                <button>Dev0ps</button>
-                <button>Bootstrap</button>
-                <button>SQL</button>
-                <button>WordPress</button>
-                <button>SEO</button>
-                <button>Webpack</button>
-                <button>Linux</button>
-              </div>
-            </div>
-          </div>
-          <div className='accordion-item'>
-            <h2 className='accordion-header' id='headingTwo'>
-              <button
-                className='accordion-button collapsed'
-                type='button'
-                data-bs-toggle='collapse'
-                data-bs-target='#collapseTwo'
-                aria-expanded='false'
-                aria-controls='collapseTwo'
-              >
-                <strong>{translations[lang].experience.administrator}</strong>
-              </button>
-            </h2>
-            <div
-              id='collapseTwo'
-              className='accordion-collapse collapse'
-              aria-labelledby='headingTwo'
-              data-bs-parent='#accordionExample'
-            >
-              <div className='accordion-body'>
-                <p>
-                  {translations[lang].experience.administrator_descriptions}
-                </p>
-                <button>JavaScript</button>
-                <button>Python</button>
-                <button>HTML</button>
-                <button>WordPress</button>
-                <button>SEO</button>
-                <button>Soft skills</button>
-              </div>
-            </div>
-          </div>
-          <div className='accordion-item'>
-            <h2 className='accordion-header' id='headingThree'>
-              <button
-                className='accordion-button collapsed'
-                type='button'
-                data-bs-toggle='collapse'
-                data-bs-target='#collapseThree'
-                aria-expanded='false'
-                aria-controls='collapseThree'
-              >
-                <strong>{translations[lang].experience.master}</strong>
-              </button>
-            </h2>
-            <div
-              id='collapseThree'
-              className='accordion-collapse collapse'
-              aria-labelledby='headingThree'
-              data-bs-parent='#accordionExample'
-            >
-              <div className='accordion-body'>
-                <p>{translations[lang].experience.master_descriptions}</p>
-                <button>Computer hardware</button>
-                <button>Operating systems</button>
-                <button>Network technologies</button>
-                <button>Soft skills</button>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
