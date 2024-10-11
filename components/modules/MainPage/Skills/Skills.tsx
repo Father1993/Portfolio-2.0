@@ -1,13 +1,19 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 import { useLang } from '@/hooks/useLang'
 import { SKILLS } from '@/constants/skills'
+import { basePropsForMotion } from '@/constants/motion'
 
 const Skills = () => {
   const { lang, translations } = useLang()
 
   return (
-    <section className='skills' id='skills'>
+    <motion.section
+      {...basePropsForMotion}
+      className='skills mt-20'
+      id='skills'
+    >
       <div className='skills__wrapper container scroll-animation-right'>
         <div className='row'>
           <h2 className='skills__title margin__text'>Skills</h2>
@@ -32,7 +38,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
 export default Skills

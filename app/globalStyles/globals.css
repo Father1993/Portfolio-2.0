@@ -97,7 +97,7 @@ a {
 }
 
 .padding__left {
-  padding-left: 133px;
+  padding-left: 70px;
 }
 
 .hero__container {
@@ -448,12 +448,6 @@ a {
 }
 
 .card-body {
-  width: 300px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0;
   border-radius: 15px;
   background-color: transparent;
   border: 0.1px solid var(--project-card-border);
@@ -502,7 +496,6 @@ a {
 }
 
 .project__link {
-  padding: 0 15px 0 10px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
