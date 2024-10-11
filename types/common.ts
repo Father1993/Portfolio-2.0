@@ -19,10 +19,26 @@ export type NavigationProps = {
   translations: Translations
 }
 
+export type Project = {
+  id: number
+  title: string
+  description: string
+  image: string
+  liveLink?: string
+  codeLink?: string
+}
 export interface LanguageButtonProps {
   lang: AllowedLangs
   currentLang: AllowedLangs
   onClick: () => void
   label: string
   className?: string
+}
+
+export type TranslationsObject = {
+  [key: string]: {
+    projects: {
+      [key: string]: string
+    }
+  }
 }
