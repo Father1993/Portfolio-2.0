@@ -840,6 +840,9 @@ a {
   .spec-links {
     font-size: 22px;
   }
+  .footer__link {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 991px) {
@@ -873,7 +876,7 @@ a {
   }
   .footer__contacts,
   .footer__link {
-    display: none;
+    display: none !important;
   }
   .footer__nav::after {
     display: none;
@@ -914,8 +917,12 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-  .header__nav-link {
-    font-size: 15px !important;
+  .header {
+    align-content: center;
+  }
+  .header__nav-mobile {
+    margin-top: 20px;
+    flex-wrap: wrap;
   }
   .about__block {
     width: 100%;
