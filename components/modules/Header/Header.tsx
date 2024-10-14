@@ -23,8 +23,8 @@ const Header = () => {
   return (
     <motion.header {...basePropsForMotion} className='p-3 text-white'>
       <div className='container mx-auto'>
-        <div className='header flex flex-wrap items-center justify-between'>
-          <div className='flex items-center'>
+        <div className='header flex flex-wrap items-center justify-center md:justify-between'>
+          <div className='flex items-center flex-col md:flex-row'>
             <HeaderLogo />
 
             <div className='header__button-wrapper ml-4'>
