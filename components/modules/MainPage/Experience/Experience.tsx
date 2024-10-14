@@ -1,3 +1,4 @@
+/* eslint-disable arrow-body-style */
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useLang } from '@/hooks/useLang'
