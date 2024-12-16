@@ -9,6 +9,23 @@ const Experience = () => {
 
   const experienceItems = [
     {
+      title: translations[lang].experience.web_developer,
+      description: translations[lang].experience.web_developer_descriptions,
+      skills: [
+        'Next.js',
+        'TypeScript',
+        'Tailwind CSS',
+        'Python',
+        'React',
+        'GitHub Actions',
+        'CI/CD',
+        'Node.js',
+        'MongoDB',
+        'REST API',
+        'SEO',
+      ],
+    },
+    {
       title: translations[lang].experience.fullStack,
       description: translations[lang].experience.fullStack_descriptions,
       skills: [

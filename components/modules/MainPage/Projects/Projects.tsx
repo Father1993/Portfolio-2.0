@@ -15,7 +15,7 @@ const Projects = () => {
   const loadMore = () => {
     setVisibleProjects((prev) => prev + 3)
 
-    // Используем setTimeout, чтобы дать React время для рендеринга новых карточек
+    // Используем setTimeout, чтобы дать время для рендеринга новых карточек
     setTimeout(() => {
       if (lastProjectRef.current) {
         const yOffset = -70 // Смещение на 30 пикселей вверх
