@@ -20,8 +20,8 @@ export const SKILLS = [
 export const ABOUT_SKILLS = [
   'JS',
   'NextJS',
-  'NodeJS',
+  'MongoDB',
   'PHP',
   'Bitrix Framework',
-  'Git',
+  'MySQL',
 ]

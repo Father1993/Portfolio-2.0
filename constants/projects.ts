@@ -52,6 +52,14 @@ export const getProjects = (
     codeLink: 'https://github.com/Father1993/Automobile-calculator',
   },
   {
+    id: 7,
+    title: translations[lang].projects.nextjs_sites,
+    description: translations[lang].projects.nextjs_sites_descr,
+    image: '/img/project/perevozka.jpg',
+    liveLink: 'https://perevozka27.ru/',
+    codeLink: 'https://xn--90anbgibdchfetk.xn--p1ai/',
+  },
+  {
     id: 18,
     title: translations[lang].projects.rukti_website,
     description: translations[lang].projects.rukti_website__descr,
@@ -66,12 +74,6 @@ export const getProjects = (
     image: '/img/project/store_app.jpg',
     liveLink: 'https://main--somestorespinej.netlify.app/',
     codeLink: 'https://github.com/Father1993/Online-jewelry-store-via-API',
-  },
-  {
-    id: 3,
-    title: translations[lang].projects.xinrosh,
-    description: translations[lang].projects.xinrosh_descr,
-    image: '/img/project/xinros_preview.jpeg',
   },
   {
     id: 4,
@@ -89,20 +91,18 @@ export const getProjects = (
     codeLink: 'https://github.com/Father1993/es-dv',
   },
   {
+    id: 3,
+    title: translations[lang].projects.xinrosh,
+    description: translations[lang].projects.xinrosh_descr,
+    image: '/img/project/xinros_preview.jpeg',
+  },
+  {
     id: 6,
     title: translations[lang].projects.plumber,
     description: translations[lang].projects.plumber_descr,
     image: '/img/project/plumber_preview.jpg',
     liveLink: 'https://plumkhv.netlify.app/',
     codeLink: 'https://github.com/Father1993/Plumber-regional-site',
-  },
-  {
-    id: 7,
-    title: translations[lang].projects.wordpress_sites,
-    description: translations[lang].projects.wordpress_sites_descr,
-    image: '/img/project/perevozka27_preview.jpg',
-    liveLink: 'https://perevozka27.ru/',
-    codeLink: 'https://xn--90anbgibdchfetk.xn--p1ai/',
   },
   {
     id: 8,

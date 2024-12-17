@@ -188,6 +188,7 @@ a {
 
 .about__container {
   display: flex;
+  justify-content: center;
 }
 
 .about__block {
