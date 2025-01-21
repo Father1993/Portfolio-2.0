@@ -11,7 +11,7 @@ const Footer = () => {
       <div className='footer__contacts-lg justify-center items-center'>
         <ul className='footer__nav-lg flex'>
           <li className='ms-3'>
-            <a target='_blank' href='https://t.me/Anri_khv'>
+            <a target='_blank' href='https://t.me/AndrejDev'>
               <img
                 decoding='async'
                 className='footer__links-hover-md'
@@ -65,7 +65,7 @@ const Footer = () => {
           <div className='footer__contacts'>
             <ul className='footer__nav d-flex flex-column'>
               <li className='ms-3'>
-                <a target='_blank' href='https://t.me/Anri_khv'>
+                <a target='_blank' href='https://t.me/AndrejDev'>
                   <img
                     className='footer__links-hover'
                     decoding='async'
