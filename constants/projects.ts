@@ -21,6 +21,21 @@ export const getProjects = (
     codeLink: 'https://github.com/Father1993/audioShop',
   },
   {
+    id: 22,
+    title: translations[lang].projects.bst_hab,
+    description: translations[lang].projects.bst_hab__descr,
+    image: '/img/project/bst-hab.webp',
+    codeLink: 'https://github.com/Father1993/bst_hab',
+    liveLink: 'https://bst-hab.ru/',
+  },
+  {
+    id: 21,
+    title: translations[lang].projects.bitrix,
+    description: translations[lang].projects.bitrix__descr,
+    image: '/img/project/bitrix.webp',
+    liveLink: 'https://mk-27.ru/',
+  },
+  {
     id: 1,
     title: translations[lang].projects.react_web_app,
     description: translations[lang].projects.react_web_app_descr,
