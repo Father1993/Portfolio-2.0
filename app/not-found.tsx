@@ -1,40 +1,7 @@
 /* eslint-disable max-len */
 'use client'
-import { Metadata } from 'next'
 import Link from 'next/link'
 import { useLang } from '@/hooks/useLang'
-
-export const metadata: Metadata = {
-  title: 'Страница не найдена | Spinej.ru',
-  description:
-    'К сожалению, запрашиваемая страница не найдена. Вернитесь на главную страницу Spinej.ru для поиска нужной информации о грузоперевозках в Хабаровске.',
-  robots: {
-    index: false,
-    follow: false,
-  },
-  openGraph: {
-    title: '404 - Страница не найдена | Spinej.ru',
-    description:
-      'Извините, запрашиваемая страница не существует. Вернитесь на главную Spinej.ru',
-    type: 'website',
-    url: 'https://spinej.ru/404',
-    images: [
-      {
-        url: '/img/404-og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: '404 - Страница не найдена | Spinej.ru',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary',
-    title: '404 - Страница не найдена | Spinej.ru',
-    description:
-      'Упс! Страница, которую вы ищете, не существует. Вернитесь на главную Spinej.ru',
-    images: '/img/android-chrome-192x192.png',
-  },
-}
 
 const NotFound = () => {
   const { lang, translations } = useLang()

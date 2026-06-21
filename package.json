@@ -18,8 +18,7 @@
     "effector": "^23.4.4",
     "effector-react": "^23.3.0",
     "framer-motion": "^11.11.7",
-    "global": "^4.4.0",
-    "next": "14.2.13",
+    "next": "15.5.19",
     "next13-progressbar": "^1.2.2",
     "react": "^18",
     "react-dom": "^18",
@@ -34,12 +33,16 @@
     "@typescript-eslint/eslint-plugin": "^7.17.0",
     "@typescript-eslint/parser": "^7.17.0",
     "eslint": "^8",
-    "eslint-config-next": "14.2.5",
+    "eslint-config-next": "15.5.19",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
-    "postcss": "^8",
+    "postcss": "^8.5.10",
     "prettier": "^3.3.3",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
+  },
+  "overrides": {
+    "glob": "^10.5.0",
+    "postcss": "^8.5.10"
   }
 }
